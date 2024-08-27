@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Form</title>
+</head>
+<body>
+    <h1>Buat Form</h1>
+    <form action="localhost/dasarWeb/buatForm.html" method="GET">
+        <input type="text" name="name" placeholder="Masukan nama anda">
+        <input type="text" name="address" placeholder="Masukan alamat anda">
+
+        <p>Are You Study?</p>
+        <input type="radio" name="study" value="yes">Yes
+        <input type="radio" name="study" value="no">No
+
+        <p>How Old Are You?</p>
+        <input type="radio" name="age" value="10-15">10-15
+        <input type="radio" name="age" value="16-20">16-20
+        <input type="radio" name="age" value="21-25">21-25
+
+        <p>What Do You Have?</p>
+        <input type="checkbox" name="possessions" value="bike">I have a bike
+        <input type="checkbox" name="possessions" value="car">I have a car
+        <input type="checkbox" name="possessions" value="boat">I have a boat
+
+        <h1>Where Are You From?</h1>
+        <select name="country">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapore">Singapore</option>
+        </select>
+
+        <p>Private Code</p>
+        <input type="password" name="code" id="code">
+
+        <h1>Pesan Anda</h1>
+        <textarea name="message" id="message" placeholder="Masukan pesan anda"></textarea>
+
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
