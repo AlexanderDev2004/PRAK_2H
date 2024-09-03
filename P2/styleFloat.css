@@ -1,0 +1,10 @@
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+
+.float1 {
+    float: left;
+    width: 100px;
+    margin-right:10px ;
+}
