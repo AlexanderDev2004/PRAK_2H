@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="styleSlideShow.css">
+    <script>
+        var i=0;
+        $(document).ready(() => {
+            $('#slider img, .slidertitle').hide();
+            showNextImage();
+            setInterval(showNextImage, 3000);
+            
+        });
+
+        function showNextImage() {
+            $('#slider img, .slidertitle').fadeOut(1000);
+            $('#slider img:eq('+i+')').fadeIn(1000);
+            $('#title'+(i+1)).fadeIn(1000);
+            if(i===2) {
+                i=0;
+            } else {
+                i++;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <img src="/P5/praktik_jquery/Alex.png" alt="Alex.png">
+        <div class="slidertitle" id="title1">gambar1</div> 
+        <img src="/P5/praktik_jquery/Tidaktau.png" alt="Tidaktau.png">
+        <div class="slidertitle" id="title2">gambar2</div> 
+        <img src="/P5/praktik_jquery/ethereum.png" alt="ethereum.png">
+        <div class="slidertitle" id="title3">gambar3</div> 
+    </div>
+</body>
+</html>
