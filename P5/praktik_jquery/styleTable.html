@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="styleTable.css">
+    <script>
+        $(document).ready(() => {
+            $(".add-row").click(function(){
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var markup = "<tr><td>"+name+"</td><td>"+email+"</td></tr>";
+                $("table tbody").append(markup);
+            })
+
+            $(".delete-row").click(function(){
+                $("table tbody").find('input[name="record"]').each(function(){
+                    if($(this).is(":checked")){
+                        $(this).parents("tr").remove();
+                    }
+                })
+            })
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="text" name="email" id="email" placeholder="email">
+        <input type="button" value="Add Row" class="add-row">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>select</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <td>John Doe</td>
+                <td>qk5o0@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="button" value="delete-row" class="delete-row">
+</body>
+</html>

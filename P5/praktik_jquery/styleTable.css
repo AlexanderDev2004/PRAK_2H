@@ -1,0 +1,21 @@
+from {
+    margin: 20px 0;
+}
+from input,button{
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table,th, td {
+    border: 1px solid #ccc;
+}
+
+table th, td {
+    padding: 10px;
+    text-align: left;
+}
