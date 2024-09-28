@@ -1,10 +1,11 @@
 <?php
-    function perkenalan () {
-        echo "Perkenalan<br>";
-        echo "Saya Alexander <br>";
+    function perkenalan ($nama,$salam) {
+        echo $salam . ", " ." <br>";
+        echo "Saya nama saya ".$nama." <br>";
         echo "Saya sedang belajar PHP <br>";
     } 
-
-    perkenalan();
-    perkenalan();
+    perkenalan("Alex","Selamat Datang");
+    $saya = "cocoy";
+    $ucapansalam ="Selamat pagi";
+    perkenalan($saya,$ucapansalam);
 ?>
