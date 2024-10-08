@@ -7,9 +7,14 @@
     //     echo "Not matched";
     // }
             
-    $pattern = "/apple/";
-    $text = 'i like pie';
-    $replacement = 'banana';
-    $new_text = preg_replace($pattern, $replacement, $text);
-    echo $new_text;
+    $pattern = "/go{1,2}d/"; 
+    $text = 'good is god'; 
+    if (preg_match($pattern, $text, $matches)) {
+        echo "cocokan: " . $matches[0];
+    } else {
+        echo "tidak cocokan";
+    }
+    // $replacement = 'banana';
+    // $new_text = preg_replace($pattern, $replacement, $text);
+    // echo $new_text;
 ?>
