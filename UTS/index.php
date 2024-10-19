@@ -28,7 +28,7 @@
     </section>
     <main>
         <section>
-            <h2>Explore Technology: Menjelajahi Inovasi di Era Digital</h2>
+            <h2> <span>Explore Technology:</span> Menjelajahi Inovasi di Era Digital</h2>
             <p>Teknologi telah menjadi bagian tak terpisahkan dari kehidupan modern. Setiap hari, inovasi baru terus bermunculan, memberikan solusi yang mengubah cara kita bekerja, belajar, dan berkomunikasi. Mulai dari kecerdasan buatan (AI), komputasi awan, hingga blockchain, teknologi menawarkan peluang tak terbatas untuk masa depan.</p>
 
             <p>
