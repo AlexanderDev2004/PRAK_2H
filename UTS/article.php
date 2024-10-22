@@ -41,6 +41,7 @@
                 "content" => "Blockchain technology is revolutionizing industries by providing secure, transparent, and decentralized transaction methods, with implications for finance, supply chains, and beyond.",
                 "link" => "https://blockchain-revolution.com/"
             ],
+      
         ];
 
         // Tampilkan artikel berdasarkan ID yang sudah diberikan
@@ -55,7 +56,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Explore Teknologi. All rights reserved/AlexanderAgungRaya.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Explore Teknologi. All rights reserved/AlexanderAgungRaya.</p>
     </footer>
 </body>
 </html>

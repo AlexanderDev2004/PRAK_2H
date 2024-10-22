@@ -78,7 +78,7 @@
     
 
     <footer>
-        <p>&copy; 2024 Explore Teknologi. All rights reserved.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear());</script> Explore Teknologi. All rights reserved/AlexanderAgungRaya.</p>
     </footer>
 </body>
 </html>
